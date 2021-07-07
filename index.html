@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Wow Graphics</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		<script src="js/three.js"></script>
+		<script>
+			var scene = new THREE.Scene(); //Scene for Map of Earth 
+            var scene2 = new THREE.Scene(); //Scene for satellites
+
+            var camera = new THREE.PerspectiveCamera( 100, window.innerWidth / window.innerHeight, 0.1, 1000 );
+            
+            //-tempate-
+            var renderer = new THREE.WebGLRenderer();
+            renderer.autoClear = false;
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            document.body.appendChild( renderer.domElement );
+            //-template
+            //Altitude of Satellites predefined //
+
+            var zo = camera.getFocalLength();
+            console.log("This is the field of View" + zo);
+
+			var material = new THREE.MeshBasicMaterial({ color: 0x006994 });
+            var circleGeometry = new THREE.CircleGeometry( 196, 19 );              
+            var circle = new THREE.Mesh( circleGeometry, material );
+            scene2.add( circle );
+            circle.position.y = -207;
+            camera.position.set(0, 0, 100);
+            camera.lookAt( new THREE.Vector3( 0, 0, 0 ) );
+
+
+
+
+           
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
+            var satP = new THREE.Mesh( geometry, material );
+            satP.name = "SAT-P";
+            scene2.add( satP );
+            var altitude = 0;
+            satP.position.x = -180;
+            satP.position.y = -40;
+            satP.position.z = altitude;
+            //end
+
+
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
+            var sati = new THREE.Mesh( geometry, material );
+            sati.name = "SAT-i";
+            scene2.add( sati );
+            var altitude = 0;
+            sati.position.x = -122;
+            sati.position.y = -14;
+            sati.position.z = altitude;
+            //end
+
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
+            var sat1 = new THREE.Mesh( geometry, material );
+            sat1.name = "SAT-1";
+            scene2.add( sat1 );
+            var altitude = 0;
+            sat1.position.x = -62;
+            sat1.position.y = 16;
+            sat1.position.z = altitude;
+            //end
+
+
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
+            var sat2 = new THREE.Mesh( geometry, material );
+            sat2.name = "SAT-2";
+            scene2.add( sat2 );
+            var altitude = 0;
+            sat2.position.x = 2;
+            sat2.position.y = 16;
+            sat2.position.z = altitude;
+            //end
+
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
+            var sat3 = new THREE.Mesh( geometry, material );
+            sat3.name = "SAT-3";
+            scene2.add( sat3 );
+            var altitude = 0;
+            sat3.position.x = 57;
+            sat3.position.y = 16;
+            sat3.position.z = altitude;
+            //end
+
+
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
+            var sat4 = new THREE.Mesh( geometry, material );
+            sat4.name = "SAT-4";
+            scene2.add( sat4 );
+            var altitude = 0;
+            sat4.position.x = 129;
+            sat4.position.y = -4;
+            sat4.position.z = altitude;
+            //end
+
+
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
+            var sat5 = new THREE.Mesh( geometry, material );
+            sat5.name = "SAT-5";
+            scene2.add( sat5 );
+            var altitude = 0;
+            sat5.position.x = 160;
+            sat5.position.y = -40;
+            sat5.position.z = altitude;
+            //end
+
+
+
+
+
+			const animate = function () {
+				requestAnimationFrame( animate );
+
+				circle.rotation.z += 0.001;
+
+                satP.rotation.x += 0.007;
+                satP.rotation.y += 0.007;
+                satP.rotation.z += 0.008;
+
+                sati.rotation.x += 0.008;
+                sati.rotation.y += 0.006;
+                sati.rotation.z += 0.006;
+
+                sat1.rotation.x += 0.008;
+                sat1.rotation.y += 0.008;
+                sat1.rotation.z += 0.008;
+
+                sat2.rotation.x += 0.006;
+                sat2.rotation.y += 0.006;
+                sat2.rotation.z += 0.006;
+
+                sat3.rotation.x += 0.006;
+                sat3.rotation.y += 0.006;
+                sat3.rotation.z += 0.006;
+
+                sat4.rotation.x += 0.006;
+                sat4.rotation.y += 0.006;
+                sat4.rotation.z += 0.006;
+
+                sat5.rotation.x += 0.006;
+                sat5.rotation.y += 0.006;
+                sat5.rotation.z += 0.006;
+
+                
+
+				renderer.clear();
+                renderer.render( scene, camera );
+                renderer.clearDepth();
+                renderer.render( scene2, camera );
+			};
+
+			animate();
+		</script>
+	</body>
+</html>
