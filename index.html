@@ -38,7 +38,7 @@
 
 
            
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
             var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
             var satP = new THREE.Mesh( geometry, material );
             satP.name = "SAT-P";
@@ -50,7 +50,7 @@
             //end
 
 
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
             var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
             var sati = new THREE.Mesh( geometry, material );
             sati.name = "SAT-i";
@@ -61,7 +61,7 @@
             sati.position.z = altitude;
             //end
 
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
             var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
             var sat1 = new THREE.Mesh( geometry, material );
             sat1.name = "SAT-1";
@@ -73,7 +73,7 @@
             //end
 
 
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
             var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
             var sat2 = new THREE.Mesh( geometry, material );
             sat2.name = "SAT-2";
@@ -84,7 +84,7 @@
             sat2.position.z = altitude;
             //end
 
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
             var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
             var sat3 = new THREE.Mesh( geometry, material );
             sat3.name = "SAT-3";
@@ -96,7 +96,7 @@
             //end
 
 
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
             var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
             var sat4 = new THREE.Mesh( geometry, material );
             sat4.name = "SAT-4";
@@ -108,7 +108,7 @@
             //end
 
 
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
             var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
             var sat5 = new THREE.Mesh( geometry, material );
             sat5.name = "SAT-5";
@@ -118,6 +118,87 @@
             sat5.position.y = -40;
             sat5.position.z = altitude;
             //end
+
+            var geometry = new THREE.SphereBufferGeometry( 6.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x5f5244, side: THREE.DoubleSide } );
+            var satCi = new THREE.Mesh( geometry, material );
+            satCi.name = "satCi";
+            scene2.add( satCi );
+            var altitude = 0;
+            satCi.position.x = -160;
+            satCi.position.y = 20;
+            satCi.position.z = altitude;
+            //end
+
+            var geometry = new THREE.SphereBufferGeometry( 6.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x5f5244, side: THREE.DoubleSide } );
+            var satCii = new THREE.Mesh( geometry, material );
+            satCii.name = "satCii";
+            scene2.add( satCii );
+            var altitude = 0;
+            satCii.position.x = -60;
+            satCii.position.y = 50;
+            satCii.position.z = altitude;
+            //end
+
+
+            var geometry = new THREE.SphereBufferGeometry( 6.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x5f5244, side: THREE.DoubleSide } );
+            var satCiii = new THREE.Mesh( geometry, material );
+            satCiii.name = "satCiii";
+            scene2.add( satCiii );
+            var altitude = 0;
+            satCiii.position.x = 50;
+            satCiii.position.y = 50;
+            satCiii.position.z = altitude;
+            //end
+
+
+            var geometry = new THREE.SphereBufferGeometry( 6.19, 8, 6, 0, 6.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x5f5244, side: THREE.DoubleSide } );
+            var satCiv = new THREE.Mesh( geometry, material );
+            satCiv.name = "satCiv";
+            scene2.add( satCiv );
+            var altitude = 0;
+            satCiv.position.x = 128;
+            satCiv.position.y = 30;
+            satCiv.position.z = altitude;
+            //end
+
+
+            var geometry = new THREE.SphereBufferGeometry( 9.29, 4, 6, 0, 2.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x49172c, side: THREE.DoubleSide } );
+            var satDi = new THREE.Mesh( geometry, material );
+            satDi.name = "satDi";
+            scene2.add( satDi );
+            var altitude = 0;
+            satDi.position.x = -120;
+            satDi.position.y = 80;
+            satDi.position.z = altitude;
+            //end
+
+            var geometry = new THREE.SphereBufferGeometry( 9.29, 4, 6, 0, 2.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x49172c, side: THREE.DoubleSide } );
+            var satDii = new THREE.Mesh( geometry, material );
+            satDii.name = "satDii";
+            scene2.add( satDii );
+            var altitude = 0;
+            satDii.position.x = 0;
+            satDii.position.y = 100;
+            satDii.position.z = altitude;
+            //end
+
+            var geometry = new THREE.SphereBufferGeometry( 9.29, 4, 6, 0, 2.3, 0, 6.3 );
+            var material = new THREE.MeshBasicMaterial( { color: 0x49172c, side: THREE.DoubleSide } );
+            var satDiii = new THREE.Mesh( geometry, material );
+            satDiii.name = "satDiii";
+            scene2.add( satDiii );
+            var altitude = 0;
+            satDiii.position.x = 100;
+            satDiii.position.y = 70;
+            satDiii.position.z = altitude;
+            //end
+
 
 
 
@@ -130,7 +211,7 @@
 
                 satP.rotation.x += 0.007;
                 satP.rotation.y += 0.007;
-                satP.rotation.z += 0.008;
+                satP.rotation.z -= 0.008;
 
                 sati.rotation.x += 0.008;
                 sati.rotation.y += 0.006;
@@ -155,6 +236,34 @@
                 sat5.rotation.x += 0.006;
                 sat5.rotation.y += 0.006;
                 sat5.rotation.z += 0.006;
+
+                satCi.rotation.x -= 0.006;
+                satCi.rotation.y += 0.006;
+                satCi.rotation.z -= 0.006;
+
+                satCii.rotation.x -= 0.006;
+                satCii.rotation.y += 0.006;
+                satCii.rotation.z += 0.006;
+
+                satCiii.rotation.x += 0.006;
+                satCiii.rotation.y += 0.006;
+                satCiii.rotation.z += 0.006;
+
+                satCiv.rotation.x += 0.006;
+                satCiv.rotation.y += 0.006;
+                satCiv.rotation.z += 0.006;
+
+                satDi.rotation.x += 0.006;
+                satDi.rotation.y += 0.006;
+                satDi.rotation.z += 0.006;
+
+                satDii.rotation.x -= 0.006;
+                satDii.rotation.y -= 0.006;
+                satDii.rotation.z -= 0.006;
+
+                satDiii.rotation.x += 0.006;
+                satDiii.rotation.y += 0.006;
+                satDiii.rotation.z += 0.006;
 
                 
 
