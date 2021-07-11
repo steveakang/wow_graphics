@@ -1,0 +1,11 @@
+Model Information:
+* title:	Satellite Dishes Animation Fun
+* source:	https://sketchfab.com/3d-models/satellite-dishes-animation-fun-72393f67ee5b4e17bc64cd18b443dd4d
+* author:	3DHaupt (https://sketchfab.com/dennish2010)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Satellite Dishes Animation Fun" (https://sketchfab.com/3d-models/satellite-dishes-animation-fun-72393f67ee5b4e17bc64cd18b443dd4d) by 3DHaupt (https://sketchfab.com/dennish2010) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
