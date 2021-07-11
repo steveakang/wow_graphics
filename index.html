@@ -9,6 +9,10 @@
 	</head>
 	<body>
 		<script src="js/three.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js" integrity="sha512-yNJzAsg5JyP91u+sLHlUDULMBd3hmEiVkYeeN1cQBKaLZ7EyT6oH2u5THNIRM2Fu6VKcZJv+F/QAp1h/qzy9Ow==" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+
+        
 		<script>
 			var scene = new THREE.Scene(); //Scene for Map of Earth 
             var scene2 = new THREE.Scene(); //Scene for satellites
@@ -26,13 +30,29 @@
             var zo = camera.getFocalLength();
             console.log("This is the field of View" + zo);
 
-			var material = new THREE.MeshBasicMaterial({ color: 0x006994 });
-            var circleGeometry = new THREE.CircleGeometry( 196, 19 );              
+            var texture = new THREE.TextureLoader().load( 'https://res.cloudinary.com/witovah/image/upload/v1626009475/hypatia_lagze5.webp' );
+
+			var material = new THREE.MeshBasicMaterial( { map: texture } );
+            var circleGeometry = new THREE.CircleGeometry( 196, 70 );              
             var circle = new THREE.Mesh( circleGeometry, material );
             scene2.add( circle );
             circle.position.y = -207;
             camera.position.set(0, 0, 100);
             camera.lookAt( new THREE.Vector3( 0, 0, 0 ) );
+
+
+            const loader = new THREE.GLTFLoader();
+
+            loader.load( 'C:\Users\steve\Desktop\satellite_dishes_animation_fun\sage\scene.gltf', function ( gltf ) {
+
+            scene2.add( gltf.scene );
+
+            }, undefined, function ( error ) {
+
+            console.error( error );
+
+            } );
+
 
 
 
