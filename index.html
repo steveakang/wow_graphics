@@ -211,41 +211,49 @@
             scene2.add(meshA4);
 
 
-            var geometry = new THREE.SphereBufferGeometry( 9.29, 4, 6, 0, 2.3, 0, 6.3 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x49172c, side: THREE.DoubleSide } );
-            var satDi = new THREE.Mesh( geometry, material );
-            satDi.name = "satDi";
-            scene2.add( satDi );
-            var altitude = 0;
-            satDi.position.x = -120;
-            satDi.position.y = 80;
-            satDi.position.z = altitude;
-            //end
-
-            var geometry = new THREE.SphereBufferGeometry( 9.29, 4, 6, 0, 2.3, 0, 6.3 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x49172c, side: THREE.DoubleSide } );
-            var satDii = new THREE.Mesh( geometry, material );
-            satDii.name = "satDii";
-            scene2.add( satDii );
-            var altitude = 0;
-            satDii.position.x = 0;
-            satDii.position.y = 100;
-            satDii.position.z = altitude;
-            //end
-
-            var geometry = new THREE.SphereBufferGeometry( 9.29, 4, 6, 0, 2.3, 0, 6.3 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x49172c, side: THREE.DoubleSide } );
-            var satDiii = new THREE.Mesh( geometry, material );
-            satDiii.name = "satDiii";
-            scene2.add( satDiii );
-            var altitude = 0;
-            satDiii.position.x = 100;
-            satDiii.position.y = 70;
-            satDiii.position.z = altitude;
-            //end
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626102413/geostat_ecvz8a.png')
+            });
+            var geometry = new THREE.PlaneGeometry(80, 55);
+            // combine our image geometry and material into a mesh
+            var meshG1 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            meshG1.position.set(-140,80,1)
+            // add the image to the scene
+            scene2.add(meshG1);
 
 
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626102413/geostat_ecvz8a.png')
+            });
+            var geometry = new THREE.PlaneGeometry(80, 55);
+            // combine our image geometry and material into a mesh
+            var meshG2 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            meshG2.position.set(-7,95,1)
+            // add the image to the scene
+            scene2.add(meshG2);
 
+
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626102413/geostat_ecvz8a.png')
+            });
+            var geometry = new THREE.PlaneGeometry(80, 55);
+            // combine our image geometry and material into a mesh
+            var meshG3 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            meshG3.position.set(110,85,1)
+            // add the image to the scene
+            scene2.add(meshG3);
 
 
 
@@ -277,18 +285,11 @@
 
                 meshA4.rotation.z += 0.001;
 
-                satDi.rotation.x += 0.006;
-                satDi.rotation.y += 0.006;
-                satDi.rotation.z += 0.006;
+                // meshG1.rotation.z -= 0.0001;
 
-                satDii.rotation.x -= 0.006;
-                satDii.rotation.y -= 0.006;
-                satDii.rotation.z -= 0.006;
+                // meshG2.rotation.z -= 0.0001;
 
-                satDiii.rotation.x += 0.006;
-                satDiii.rotation.y += 0.006;
-                satDiii.rotation.z += 0.006;
-
+                // meshG3.rotation.z -= 0.0001;
                 
 
 				renderer.clear();
