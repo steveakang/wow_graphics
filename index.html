@@ -49,97 +49,105 @@
             });
             var geometry = new THREE.PlaneGeometry(25, 25);
             // combine our image geometry and material into a mesh
-            var mesh = new THREE.Mesh(geometry, material);
+            var mesh1 = new THREE.Mesh(geometry, material);
             // set the position of the image mesh in the x,y,z dimensions
-            mesh.position.set(2,19,1)
+            mesh1.position.set(-180,-40,1)
             // add the image to the scene
-            scene2.add(mesh);
+            scene2.add(mesh1);
+
+            
+
+
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
+            });
+            var geometry = new THREE.PlaneGeometry(25, 25);
+            // combine our image geometry and material into a mesh
+            var mesh2 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            mesh2.position.set(-122,-14,1)
+            // add the image to the scene
+            scene2.add(mesh2);
+
+
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
+            });
+            var geometry = new THREE.PlaneGeometry(25, 25);
+            // combine our image geometry and material into a mesh
+            var mesh3 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            mesh3.position.set(-62,16,1)
+            // add the image to the scene
+            scene2.add(mesh3);
+
+
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
+            });
+            var geometry = new THREE.PlaneGeometry(25, 25);
+            // combine our image geometry and material into a mesh
+            var mesh4 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            mesh4.position.set(2,19,1)
+            // add the image to the scene
+            scene2.add(mesh4);
+
+
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
+            });
+            var geometry = new THREE.PlaneGeometry(25, 25);
+            // combine our image geometry and material into a mesh
+            var mesh5 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            mesh5.position.set(57,16,1)
+            // add the image to the scene
+            scene2.add(mesh5);
 
 
 
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
+            });
+            var geometry = new THREE.PlaneGeometry(25, 25);
+            // combine our image geometry and material into a mesh
+            var mesh6 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            mesh6.position.set(129,-4,1)
+            // add the image to the scene
+            scene2.add(mesh6);
 
 
-           
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
-            var satP = new THREE.Mesh( geometry, material );
-            satP.name = "SAT-P";
-            scene2.add( satP );
-            var altitude = 0;
-            satP.position.x = -180;
-            satP.position.y = -40;
-            satP.position.z = altitude;
-            //end
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
+            });
+            var geometry = new THREE.PlaneGeometry(25, 25);
+            // combine our image geometry and material into a mesh
+            var mesh7 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            mesh7.position.set(160,-40,1)
+            // add the image to the scene
+            scene2.add(mesh7);
 
-
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
-            var sati = new THREE.Mesh( geometry, material );
-            sati.name = "SAT-i";
-            scene2.add( sati );
-            var altitude = 0;
-            sati.position.x = -122;
-            sati.position.y = -14;
-            sati.position.z = altitude;
-            //end
-
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
-            var sat1 = new THREE.Mesh( geometry, material );
-            sat1.name = "SAT-1";
-            scene2.add( sat1 );
-            var altitude = 0;
-            sat1.position.x = -62;
-            sat1.position.y = 16;
-            sat1.position.z = altitude;
-            //end
-
-
-            // var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
-            // var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
-            // var sat2 = new THREE.Mesh( geometry, material );
-            // sat2.name = "SAT-2";
-            // scene2.add( sat2 );
-            // var altitude = 0;
-            // sat2.position.x = 2;
-            // sat2.position.y = 16;
-            // sat2.position.z = altitude;
-            //end
-
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
-            var sat3 = new THREE.Mesh( geometry, material );
-            sat3.name = "SAT-3";
-            scene2.add( sat3 );
-            var altitude = 0;
-            sat3.position.x = 57;
-            sat3.position.y = 16;
-            sat3.position.z = altitude;
-            //end
-
-
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
-            var sat4 = new THREE.Mesh( geometry, material );
-            sat4.name = "SAT-4";
-            scene2.add( sat4 );
-            var altitude = 0;
-            sat4.position.x = 129;
-            sat4.position.y = -4;
-            sat4.position.z = altitude;
-            //end
-
-
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
-            var sat5 = new THREE.Mesh( geometry, material );
-            sat5.name = "SAT-5";
-            scene2.add( sat5 );
-            var altitude = 0;
-            sat5.position.x = 160;
-            sat5.position.y = -40;
-            sat5.position.z = altitude;
-            //end
 
             var geometry = new THREE.SphereBufferGeometry( 6.19, 8, 6, 0, 6.3, 0, 6.3 );
             var material = new THREE.MeshBasicMaterial( { color: 0x5f5244, side: THREE.DoubleSide } );
@@ -231,38 +239,21 @@
 
 				circle.rotation.z += 0.001;
 
-                satP.rotation.x += 0.007;
-                satP.rotation.y += 0.007;
-                satP.rotation.z -= 0.008;
+                mesh1.rotation.z -= 0.004;
 
-                sati.rotation.x += 0.008;
-                sati.rotation.y += 0.006;
-                sati.rotation.z += 0.006;
-
-                sat1.rotation.x += 0.008;
-                sat1.rotation.y += 0.008;
-                sat1.rotation.z += 0.008;
-
-                // sat2.rotation.x += 0.006;
-                // sat2.rotation.y += 0.006;
-                // sat2.rotation.z += 0.006;
-
-                mesh.rotation.z += 0.004;
+                mesh2.rotation.z += 0.004;
                 
+                mesh3.rotation.z -= 0.004;
+
+                mesh4.rotation.z += 0.004;
+
+                mesh5.rotation.z -= 0.004; 
                 
+                mesh6.rotation.z += 0.004;
 
-                sat3.rotation.x += 0.006;
-                sat3.rotation.y += 0.006;
-                sat3.rotation.z += 0.006;
+                mesh7.rotation.z -= 0.004;
 
-                sat4.rotation.x += 0.006;
-                sat4.rotation.y += 0.006;
-                sat4.rotation.z += 0.006;
-
-                sat5.rotation.x += 0.006;
-                sat5.rotation.y += 0.006;
-                sat5.rotation.z += 0.006;
-
+                
                 satCi.rotation.x -= 0.006;
                 satCi.rotation.y += 0.006;
                 satCi.rotation.z -= 0.006;
