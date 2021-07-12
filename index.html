@@ -41,17 +41,19 @@
             camera.lookAt( new THREE.Vector3( 0, 0, 0 ) );
 
 
-            const loader = new THREE.GLTFLoader();
-
-            loader.load( 'scene.gltf', function ( gltf ) {
-
-            scene2.add( gltf.scene );
-
-            }, undefined, function ( error ) {
-
-            console.error( error );
-
-            } );
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
+            });
+            var geometry = new THREE.PlaneGeometry(25, 25);
+            // combine our image geometry and material into a mesh
+            var mesh = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            mesh.position.set(2,19,1)
+            // add the image to the scene
+            scene2.add(mesh);
 
 
 
@@ -93,15 +95,15 @@
             //end
 
 
-            var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
-            var sat2 = new THREE.Mesh( geometry, material );
-            sat2.name = "SAT-2";
-            scene2.add( sat2 );
-            var altitude = 0;
-            sat2.position.x = 2;
-            sat2.position.y = 16;
-            sat2.position.z = altitude;
+            // var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
+            // var material = new THREE.MeshBasicMaterial( { color: 0x808080, side: THREE.DoubleSide } );
+            // var sat2 = new THREE.Mesh( geometry, material );
+            // sat2.name = "SAT-2";
+            // scene2.add( sat2 );
+            // var altitude = 0;
+            // sat2.position.x = 2;
+            // sat2.position.y = 16;
+            // sat2.position.z = altitude;
             //end
 
             var geometry = new THREE.SphereBufferGeometry( 4.19, 8, 6, 0, 3.3, 0, 6.3 );
@@ -241,9 +243,13 @@
                 sat1.rotation.y += 0.008;
                 sat1.rotation.z += 0.008;
 
-                sat2.rotation.x += 0.006;
-                sat2.rotation.y += 0.006;
-                sat2.rotation.z += 0.006;
+                // sat2.rotation.x += 0.006;
+                // sat2.rotation.y += 0.006;
+                // sat2.rotation.z += 0.006;
+
+                mesh.rotation.z += 0.004;
+                
+                
 
                 sat3.rotation.x += 0.006;
                 sat3.rotation.y += 0.006;
