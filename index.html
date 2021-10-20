@@ -47,7 +47,7 @@
             var material = new THREE.MeshBasicMaterial({
             map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
             });
-            var geometry = new THREE.PlaneGeometry(13, 13);
+            var geometry = new THREE.PlaneGeometry(10, 10);
             // combine our image geometry and material into a mesh
             var mesh1 = new THREE.Mesh(geometry, material);
             // set the position of the image mesh in the x,y,z dimensions
@@ -64,7 +64,7 @@
             var material = new THREE.MeshBasicMaterial({
             map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
             });
-            var geometry = new THREE.PlaneGeometry(13, 13);
+            var geometry = new THREE.PlaneGeometry(10, 10);
             // combine our image geometry and material into a mesh
             var mesh2 = new THREE.Mesh(geometry, material);
             // set the position of the image mesh in the x,y,z dimensions
@@ -79,7 +79,7 @@
             var material = new THREE.MeshBasicMaterial({
             map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
             });
-            var geometry = new THREE.PlaneGeometry(13, 13);
+            var geometry = new THREE.PlaneGeometry(10, 10);
             // combine our image geometry and material into a mesh
             var mesh3 = new THREE.Mesh(geometry, material);
             // set the position of the image mesh in the x,y,z dimensions
@@ -94,7 +94,7 @@
             var material = new THREE.MeshBasicMaterial({
             map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
             });
-            var geometry = new THREE.PlaneGeometry(13, 13);
+            var geometry = new THREE.PlaneGeometry(10, 10);
             // combine our image geometry and material into a mesh
             var mesh4 = new THREE.Mesh(geometry, material);
             // set the position of the image mesh in the x,y,z dimensions
@@ -109,7 +109,7 @@
             var material = new THREE.MeshBasicMaterial({
             map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
             });
-            var geometry = new THREE.PlaneGeometry(13, 13);
+            var geometry = new THREE.PlaneGeometry(10, 10);
             // combine our image geometry and material into a mesh
             var mesh5 = new THREE.Mesh(geometry, material);
             // set the position of the image mesh in the x,y,z dimensions
@@ -125,7 +125,7 @@
             var material = new THREE.MeshBasicMaterial({
             map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
             });
-            var geometry = new THREE.PlaneGeometry(13, 13);
+            var geometry = new THREE.PlaneGeometry(10, 10);
             // combine our image geometry and material into a mesh
             var mesh6 = new THREE.Mesh(geometry, material);
             // set the position of the image mesh in the x,y,z dimensions
@@ -142,13 +142,44 @@
             var material = new THREE.MeshBasicMaterial({
             map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
             });
-            var geometry = new THREE.PlaneGeometry(13, 13);
+            var geometry = new THREE.PlaneGeometry(10, 10);
             // combine our image geometry and material into a mesh
             var mesh7 = new THREE.Mesh(geometry, material);
             // set the position of the image mesh in the x,y,z dimensions
             mesh7.position.set(160, -4, 1)
             // add the image to the scene
             scene2.add(mesh7);
+
+
+            // instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
+            });
+            var geometry = new THREE.PlaneGeometry(10, 10);
+            // combine our image geometry and material into a mesh
+            var mesh8 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            mesh8.position.set(191, -15, 1)
+            // add the image to the scene
+            scene2.add(mesh8);
+
+
+             // instantiate a loader
+             var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1626049588/sat_r1dmaz.png')
+            });
+            var geometry = new THREE.PlaneGeometry(10, 10);
+            // combine our image geometry and material into a mesh
+            var mesh9 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            mesh9.position.set(222, -26, 1)
+            // add the image to the scene
+            scene2.add(mesh9);
+
 
 
             // instantiate a loader
@@ -331,6 +362,23 @@
             // add the image to the scene
             scene2.add(meshD8);
 
+
+            //instantiate a loader
+            var loader = new THREE.TextureLoader();
+            // Load an image file into a custom material
+            var material = new THREE.MeshBasicMaterial({
+            map: loader.load('https://res.cloudinary.com/witovah/image/upload/v1633424613/drone_wjwftj.png')
+            });
+            var geometry = new THREE.PlaneGeometry(5, 5);
+            // combine our image geometry and material into a mesh
+            var meshD9 = new THREE.Mesh(geometry, material);
+            // set the position of the image mesh in the x,y,z dimensions
+            meshD9.position.set(130,-53,1)
+            // add the image to the scene
+            scene2.add(meshD9);
+
+
+
             var dotGeometry = new THREE.Geometry();
             dotGeometry.vertices.push(new THREE.Vector3( 0, 0, 0));
             var dotMaterial = new THREE.PointsMaterial( { size: 6, sizeAttenuation: false, color: 0xff0e0e} );
@@ -438,6 +486,104 @@
 
 
 
+            var material = new THREE.LineBasicMaterial( {
+                color: 0x00ff40,
+                linewidth: 30,
+                linecap: 'round', //ignored by WebGLRenderer
+                linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            var geometry = new THREE.Geometry();
+            //Start Point [0]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            //End Point [1]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            var line1 = new THREE.Line( geometry, material );
+            scene2.add( line1 );
+
+
+            var material = new THREE.LineBasicMaterial( {
+                color: 0x00ff40,
+                linewidth: 30,
+                linecap: 'round', //ignored by WebGLRenderer
+                linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            var geometry = new THREE.Geometry();
+            //Start Point [0]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            //End Point [1]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            var line2 = new THREE.Line( geometry, material );
+            scene2.add( line2 );
+
+
+
+
+           
+
+            function connect() {
+
+                line1.geometry.vertices[ 0 ].x = dot2.position.x;
+                line1.geometry.vertices[ 0 ].y = dot2.position.y;
+
+                line1.geometry.vertices[ 1 ].x = meshD1.position.x;
+                line1.geometry.vertices[ 1 ].y = meshD1.position.y; 
+                line1.geometry.verticesNeedUpdate = true;
+
+                line2.geometry.vertices[ 0 ].x = meshD1.position.x;
+                line2.geometry.vertices[ 0 ].y = meshD1.position.y; 
+
+                line2.geometry.vertices[ 1 ].x = dot3.position.x;
+                line2.geometry.vertices[ 1 ].y = dot3.position.y;
+                line2.geometry.verticesNeedUpdate = true; 
+
+
+            }
+           function disconnect() {
+                line1.geometry.vertices[ 0 ].x = 0;
+                line1.geometry.vertices[ 0 ].y = 0;
+
+                line1.geometry.vertices[ 1 ].x = 0;
+                line1.geometry.vertices[ 1 ].y = 0;
+                line1.geometry.verticesNeedUpdate = true;
+
+                line2.geometry.vertices[ 0 ].x = 0;
+                line2.geometry.vertices[ 0 ].y = 0; 
+
+                line2.geometry.vertices[ 1 ].x = 0;
+                line2.geometry.vertices[ 1 ].y = 0;
+                line2.geometry.verticesNeedUpdate = true; 
+           }
+           
+           function link() {
+                connect();
+                var audio = new Audio('https://steveakang.github.io/starmesh/sound/btn.mp3');
+                audio.play();
+                setTimeout(function() { disconnect()  }, 500);
+           }
+            var s;
+            
+            function flash() {
+                    s = setInterval(function() { link();  }, 1000);
+            }
+            function stopflash() {
+              clearInterval(s);
+                    
+            }
+            
+            flash();
+
+
+
+
+
 
 
 
@@ -449,47 +595,55 @@
 				// circle.rotation.z += 0.001;
 
                 mesh1.rotation.z -= 0.004;
-                mesh1.position.x += 0.020;
+                mesh1.position.x += 0.005;
                 mesh1.position.y += 0.009;
 
                 mesh2.rotation.z += 0.004;
-                mesh2.position.x -= 0.024;
-                mesh2.position.y -= 0.026;
+                mesh2.position.x -= 0.005;
+                mesh2.position.y -= 0.002;
                 
                 mesh3.rotation.z -= 0.004;
-                mesh3.position.x -= 0.024;
+                mesh3.position.x -= 0.005;
                 // mesh3.position.y += 0.019;
 
                 mesh4.rotation.z += 0.004;
-                mesh4.position.x -= 0.024;
-                mesh4.position.y -= 0.004;
+                mesh4.position.x -= 0.005;
+                mesh4.position.y -= 0.0002;
 
                 mesh5.rotation.z -= 0.004; 
-                mesh5.position.x -= 0.024;
+                mesh5.position.x -= 0.005;
                 mesh5.position.y += 0.001;
                 
                 mesh6.rotation.z += 0.004;
-                mesh6.position.x -= 0.024;
+                mesh6.position.x -= 0.005;
                 mesh6.position.y += 0.003;
 
                 mesh7.rotation.z -= 0.004;
-                mesh7.position.x -= 0.024;
+                mesh7.position.x -= 0.005;
                 mesh7.position.y += 0.003;
+
+                mesh8.rotation.z -= 0.004;
+                mesh8.position.x -= 0.005;
+                mesh8.position.y += 0.0038;
+
+                mesh9.rotation.z -= 0.004;
+                mesh9.position.x -= 0.005;
+                mesh9.position.y += 0.0038;
 
                 
                 meshA1.rotation.z -= 0.001;
-                meshA1.position.x += 0.024;
+                meshA1.position.x += 0.005;
                 // meshA1.position.y -= 0.001;
 
                 meshA2.rotation.z += 0.001;
-                meshA2.position.x += 0.024;
+                meshA2.position.x += 0.005;
                 // meshA2.position.y -= 0.019;
 
                 meshA3.rotation.z -= 0.001;
-                meshA3.position.x += 0.024;
+                meshA3.position.x += 0.005;
 
                 meshA4.rotation.z += 0.001;
-                meshA4.position.x += 0.024;
+                meshA4.position.x += 0.005;
 
                 // meshG1.rotation.z -= 0.0001;
 
