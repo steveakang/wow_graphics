@@ -524,6 +524,138 @@
             scene2.add( line2 );
 
 
+            var material = new THREE.LineBasicMaterial( {
+                color: 0x00ff40,
+                linewidth: 30,
+                linecap: 'round', //ignored by WebGLRenderer
+                linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            var geometry = new THREE.Geometry();
+            //Start Point [0]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            //End Point [1]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            var line3 = new THREE.Line( geometry, material );
+            scene2.add( line3 );
+
+
+            var material = new THREE.LineBasicMaterial( {
+                color: 0x00ff40,
+                linewidth: 30,
+                linecap: 'round', //ignored by WebGLRenderer
+                linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            var geometry = new THREE.Geometry();
+            //Start Point [0]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            //End Point [1]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            var line4 = new THREE.Line( geometry, material );
+            scene2.add( line4 );
+
+
+            var material = new THREE.LineBasicMaterial( {
+                color: 0x00ff40,
+                linewidth: 30,
+                linecap: 'round', //ignored by WebGLRenderer
+                linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            var geometry = new THREE.Geometry();
+            //Start Point [0]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            //End Point [1]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            var line5 = new THREE.Line( geometry, material );
+            scene2.add( line5 );
+
+
+            var material = new THREE.LineBasicMaterial( {
+                color: 0x00ff40,
+                linewidth: 30,
+                linecap: 'round', //ignored by WebGLRenderer
+                linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            var geometry = new THREE.Geometry();
+            //Start Point [0]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            //End Point [1]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            var line6 = new THREE.Line( geometry, material );
+            scene2.add( line6 );
+
+
+
+            var material = new THREE.LineBasicMaterial( {
+                color: 0x00ff40,
+                linewidth: 30,
+                linecap: 'round', //ignored by WebGLRenderer
+                linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            var geometry = new THREE.Geometry();
+            //Start Point [0]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            //End Point [1]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            var line7 = new THREE.Line( geometry, material );
+            scene2.add( line7 );
+
+
+            var material = new THREE.LineBasicMaterial( {
+                color: 0x00ff40,
+                linewidth: 30,
+                linecap: 'round', //ignored by WebGLRenderer
+                linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            var geometry = new THREE.Geometry();
+            //Start Point [0]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            //End Point [1]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            var line8 = new THREE.Line( geometry, material );
+            scene2.add( line8 );
+
+
+            var material = new THREE.LineBasicMaterial( {
+                color: 0x00ff40,
+                linewidth: 30,
+                linecap: 'round', //ignored by WebGLRenderer
+                linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            var geometry = new THREE.Geometry();
+            //Start Point [0]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            //End Point [1]
+            geometry.vertices.push(new THREE.Vector3( 0, 0) );
+            geometry.verticesNeedUpdate = true;
+            geometry.dynamic = true;
+            var line9 = new THREE.Line( geometry, material );
+            scene2.add( line9 );
 
 
            
@@ -532,34 +664,116 @@
 
                 line1.geometry.vertices[ 0 ].x = dot2.position.x;
                 line1.geometry.vertices[ 0 ].y = dot2.position.y;
-
                 line1.geometry.vertices[ 1 ].x = meshD1.position.x;
                 line1.geometry.vertices[ 1 ].y = meshD1.position.y; 
                 line1.geometry.verticesNeedUpdate = true;
-
                 line2.geometry.vertices[ 0 ].x = meshD1.position.x;
                 line2.geometry.vertices[ 0 ].y = meshD1.position.y; 
-
                 line2.geometry.vertices[ 1 ].x = dot3.position.x;
                 line2.geometry.vertices[ 1 ].y = dot3.position.y;
                 line2.geometry.verticesNeedUpdate = true; 
+
+                line3.geometry.vertices[ 0 ].x = dot7.position.x;
+                line3.geometry.vertices[ 0 ].y = dot7.position.y;
+                line3.geometry.vertices[ 1 ].x = meshD5.position.x;
+                line3.geometry.vertices[ 1 ].y = meshD5.position.y; 
+                line3.geometry.verticesNeedUpdate = true;
+                line4.geometry.vertices[ 0 ].x = meshD5.position.x;
+                line4.geometry.vertices[ 0 ].y = meshD5.position.y; 
+                line4.geometry.vertices[ 1 ].x = dot8.position.x;
+                line4.geometry.vertices[ 1 ].y = dot8.position.y;
+                line4.geometry.verticesNeedUpdate = true;
+
+
+                line5.geometry.vertices[ 0 ].x = dot11.position.x;
+                line5.geometry.vertices[ 0 ].y = dot11.position.y; 
+                line5.geometry.vertices[ 1 ].x = mesh7.position.x;
+                line5.geometry.vertices[ 1 ].y = mesh7.position.y;
+                line5.geometry.verticesNeedUpdate = true; 
+                line6.geometry.vertices[ 0 ].x = mesh7.position.x;
+                line6.geometry.vertices[ 0 ].y = mesh7.position.y; 
+                line6.geometry.vertices[ 1 ].x = meshA3.position.x;
+                line6.geometry.vertices[ 1 ].y = meshA3.position.y; 
+                line6.geometry.verticesNeedUpdate = true;
+                line7.geometry.vertices[ 0 ].x = meshA3.position.x;
+                line7.geometry.vertices[ 0 ].y = meshA3.position.y; 
+                line7.geometry.vertices[ 1 ].x = mesh3.position.x;
+                line7.geometry.vertices[ 1 ].y = mesh3.position.y; 
+                line7.geometry.verticesNeedUpdate = true;
+
+                line8.geometry.vertices[ 0 ].x = mesh3.position.x;
+                line8.geometry.vertices[ 0 ].y = mesh3.position.y; 
+                line8.geometry.vertices[ 1 ].x = meshD2.position.x;
+                line8.geometry.vertices[ 1 ].y = meshD2.position.y; 
+                line8.geometry.verticesNeedUpdate = true;
+                line9.geometry.vertices[ 0 ].x = meshD2.position.x;
+                line9.geometry.vertices[ 0 ].y = meshD2.position.y; 
+                line9.geometry.vertices[ 1 ].x = dot4.position.x;
+                line9.geometry.vertices[ 1 ].y = dot4.position.y; 
+                line9.geometry.verticesNeedUpdate = true;
+
+
+
+
+
 
 
             }
            function disconnect() {
                 line1.geometry.vertices[ 0 ].x = 0;
                 line1.geometry.vertices[ 0 ].y = 0;
-
                 line1.geometry.vertices[ 1 ].x = 0;
                 line1.geometry.vertices[ 1 ].y = 0;
                 line1.geometry.verticesNeedUpdate = true;
-
                 line2.geometry.vertices[ 0 ].x = 0;
                 line2.geometry.vertices[ 0 ].y = 0; 
-
                 line2.geometry.vertices[ 1 ].x = 0;
                 line2.geometry.vertices[ 1 ].y = 0;
                 line2.geometry.verticesNeedUpdate = true; 
+
+
+                line3.geometry.vertices[ 0 ].x = 0;
+                line3.geometry.vertices[ 0 ].y = 0;
+                line3.geometry.vertices[ 1 ].x = 0;
+                line3.geometry.vertices[ 1 ].y = 0; 
+                line3.geometry.verticesNeedUpdate = true;
+                line4.geometry.vertices[ 0 ].x = 0;
+                line4.geometry.vertices[ 0 ].y = 0; 
+                line4.geometry.vertices[ 1 ].x = 0;
+                line4.geometry.vertices[ 1 ].y = 0;
+                line4.geometry.verticesNeedUpdate = true;
+
+                line5.geometry.vertices[ 0 ].x = 0;
+                line5.geometry.vertices[ 0 ].y = 0; 
+                line5.geometry.vertices[ 1 ].x = 0;
+                line5.geometry.vertices[ 1 ].y = 0;
+                line5.geometry.verticesNeedUpdate = true; 
+                line6.geometry.vertices[ 0 ].x = 0;
+                line6.geometry.vertices[ 0 ].y = 0; 
+                line6.geometry.vertices[ 1 ].x = 0;
+                line6.geometry.vertices[ 1 ].y = 0; 
+                line6.geometry.verticesNeedUpdate = true;
+                line7.geometry.vertices[ 0 ].x = 0;
+                line7.geometry.vertices[ 0 ].y = 0; 
+                line7.geometry.vertices[ 1 ].x = 0;
+                line7.geometry.vertices[ 1 ].y = 0; 
+                line7.geometry.verticesNeedUpdate = true;
+
+                line8.geometry.vertices[ 0 ].x = 0;
+                line8.geometry.vertices[ 0 ].y = 0; 
+                line8.geometry.vertices[ 1 ].x = 0;
+                line8.geometry.vertices[ 1 ].y = 0; 
+                line8.geometry.verticesNeedUpdate = true;
+                line9.geometry.vertices[ 0 ].x = 0;
+                line9.geometry.vertices[ 0 ].y = 0; 
+                line9.geometry.vertices[ 1 ].x = 0;
+                line9.geometry.vertices[ 1 ].y = 0; 
+                line9.geometry.verticesNeedUpdate = true;
+
+
+
+
+
            }
            
            function link() {
