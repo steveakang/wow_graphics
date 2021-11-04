@@ -1378,39 +1378,33 @@
             } 
 
            
-           function link() {
+           function link() { 
                 connect1();
                 var audio = new Audio('https://steveakang.github.io/starmesh/sound/btn.mp3');
-                audio.play();
-                // setTimeout(function() { disconnect1()  }, 3000);
-                
-                // connect1();
-                setTimeout(function() { connect2(); audio.play(); }, 2000);
+                setTimeout(function() { connect1(); }, 2000);
                 setTimeout(function() { audio.play(); }, 3000);
-                setTimeout(function() { disconnect1();  }, 4000);
+                setTimeout(function() { connect2(); }, 4000);
                 setTimeout(function() { audio.play(); }, 5000);
-                setTimeout(function() { disconnect2(); connect3(); audio.play(); }, 6000);
+                setTimeout(function() { connect3(); disconnect1(); }, 6000);
                 setTimeout(function() { audio.play(); }, 7000);
-                setTimeout(function() { connect4(); audio.play();  }, 8000);
+                setTimeout(function() { connect4(); disconnect2();}, 8000);
                 setTimeout(function() { audio.play(); }, 9000);
-                setTimeout(function() { disconnect3();  }, 10000);
+                setTimeout(function() { connect5(); disconnect3();  }, 10000);
                 setTimeout(function() { audio.play(); }, 11000);
-                setTimeout(function() { disconnect4(); connect5();  }, 12000);
+                setTimeout(function() { connect6(); disconnect4(); }, 12000);
                 setTimeout(function() { audio.play(); }, 13000);
-                setTimeout(function() {  connect6(); }, 14000);
+                setTimeout(function() { connect7(); disconnect5(); }, 14000);
                 setTimeout(function() { audio.play(); }, 15000);
-                setTimeout(function() { disconnect5(); connect7(); }, 16000); 
+                setTimeout(function() { connect8(); disconnect6(); }, 16000);
                 setTimeout(function() { audio.play(); }, 17000);
-                setTimeout(function() { disconnect6();  }, 18000);
-                setTimeout(function() { disconnect7(); connect8();  }, 20000);
-                setTimeout(function() { audio.play(); }, 22000);
-                setTimeout(function() { disconnect8();  }, 24000);
-
+                setTimeout(function() { disconnect7(); }, 18000);
+                setTimeout(function() { audio.play(); }, 19000);
+                setTimeout(function() { disconnect8(); }, 20000);
            }
             var s;
             
             function flash() {
-                    s = setInterval(function() { link();  }, 24000);
+                    s = setInterval(function() { link();  }, 21000);
             }
             function stopflash() {
               clearInterval(s);
